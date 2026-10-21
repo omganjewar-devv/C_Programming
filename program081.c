@@ -1,0 +1,34 @@
+// input : 10
+// 4    3    2    1
+
+#include<stdio.h>
+#include<stdlib.h>
+
+int Summation(int iNo)
+{
+    int iCnt = 0;
+    int iSum = 0;
+
+    for(iCnt = 1 ; iCnt <= iNo ; iCnt++)      // += is shorthand operator
+    {
+        iSum = iSum * iCnt;
+    }
+
+    return  iSum;
+}
+
+int main()
+{
+    
+    int iValue = 0;
+    int iRet = 0;
+
+    printf("enter the no. : ");
+    scanf("%d",&iValue);
+
+    iRet=Summation(iValue);
+
+    printf("Factorial is : %d\n",iRet);
+
+    return EXIT_SUCCESS;
+}
